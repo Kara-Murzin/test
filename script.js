@@ -1,4 +1,3 @@
-// Создаем объект с товарами
    const products = [
     { image: 'assets/T120.210.11.041.00_R.png.avif', title: 'Product 1', favorite: true, price: '10.00' },
     { image: 'assets/T120.210.11.041.00_R.png.png', title: 'Product 2', favorite: false, price: '20.00' },
