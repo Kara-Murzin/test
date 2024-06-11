@@ -51,11 +51,11 @@ body {
 /* Star icon styles */
 .favorite.true {
   border: 1px solid #FAB005;
-  background-image: url('assets/icons8-звезда-50.png');
+  background-image: url('assets/yellow.png');
 }
 
 .favorite.false {  
-  background-image: url('assets/icons8-звезда-50-2.png');
+  background-image: url('assets/white.png');
   background-color: #FAB005;
 }
 
