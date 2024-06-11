@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: grid;
+  padding: 16px;
+}
+
+.product-card {
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card .title {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.product-card .price {
+  color: #28a745;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.product-card .favorite {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin: 8px auto;
+  background-size: cover;
+}
+
+/* Star icon styles */
+.favorite.true {
+  border: 1px solid #FAB005;
+  background-image: url('assets/icons8-звезда-50.png');
+}
+
+.favorite.false {  
+  background-image: url('assets/icons8-звезда-50-2.png');
+  background-color: #FAB005;
+}
+
+/* Define the grid template for different screen widths and set different gaps */
+@media (min-width: 1280px) {
+  .container {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 960px) {
+  .container {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+  }
+}
+
+@media (max-width: 959px) and (min-width: 720px) {
+  .container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+  }
+}
+
+@media (max-width: 719px) and (min-width: 480px) {
+  .container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+      grid-template-columns: 1fr;
+      gap: 32px;
+  }
+}
